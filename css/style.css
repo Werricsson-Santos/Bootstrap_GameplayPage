@@ -1,3 +1,8 @@
-
+.containerbg {
+  background-image: url(../images/home/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
 
 /*# sourceMappingURL=style.css.map */
