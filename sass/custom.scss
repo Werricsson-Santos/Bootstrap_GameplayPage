@@ -1,0 +1,21 @@
+@mixin background($image, $repeat,$attachment,$size){
+    background-image: $image;
+    background-repeat: $repeat;
+    background-attachment: $attachment;
+    background-size: $size;
+}
+@mixin logo($width,$height) {
+    width: $width;
+    height: $height;
+}  
+    
+    // Import Bootstrap
+    @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+    .containerbg {
+        @include background(url(../../images/home/backgroundMobile_edited.jpg), no-repeat, fixed, 100%);
+    }
+
+    .logoPc {
+        @include logo(50px, 50px);
+    }

@@ -1,0 +1,22 @@
+{
+  "name": "bootstrapgameplaypage",
+  "version": "1.0.0",
+  "description": "learning sass | bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Werricsson/Bootstrap_GameplayPage.git"
+  },
+  "author": "WrN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Werricsson/Bootstrap_GameplayPage/issues"
+  },
+  "homepage": "https://github.com/Werricsson/Bootstrap_GameplayPage#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  }
+}
