@@ -12,7 +12,7 @@
     @import '../node_modules/bootstrap/scss/bootstrap';
 
     .containerbg {
-        @include background(url(../images/home/backgroundMobile_edited.jpg), no-repeat, fixed, cover);
+        @include background(url(../images/home/background.jpg), no-repeat, fixed, cover);
         height: 100%;
         background-position: center;
     }
@@ -36,9 +36,46 @@
     }
     .sidebar {
         width: 300px;
+        border-bottom: 2px solid rgba(245, 228,1,0.6);
+    }
+    .loginContent{
+        height: 63vh;
     }
 
     .sidebarCardImg {
         @include logo(250px, 250px);
+    }
 
+    .designedBy{
+        @include logo(60px, 60px);
+    }
+
+    @media(max-width: 1148px) {
+        .videoContent {
+            margin: 45px;
+        }
+        .sidebar {
+            display: none;
+        }
+    }
+    
+    @media(max-width: 1083px) {
+        .videoContent {
+            margin: 40px;
+        }
+        .sidebar {
+            display: none;
+        }
+    }
+    @media(max-width: 992px) {
+        .containerbg {
+            background-image: url(../images/home/backgroundMobile_edited.jpg);
+        }
+        .videoContent {
+            margin: 0px;
+            padding: 0px;
+        }
+        .sidebar {
+            display: block;
+        }
     }
