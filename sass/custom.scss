@@ -12,14 +12,33 @@
     @import '../node_modules/bootstrap/scss/bootstrap';
 
     .containerbg {
-        @include background(url(../../images/home/backgroundMobile_edited.jpg), no-repeat, fixed, 100%);
+        @include background(url(../images/home/backgroundMobile_edited.jpg), no-repeat, fixed, cover);
+        height: 100%;
+        background-position: center;
     }
 
     .logoPc {
         @include logo(50px, 50px);
     }
 
+    .header{
+        border-bottom: 2px solid rgba(245, 228,1,0.6);
+    }
+
+    .titlePadding {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
     .categoryVideo iframe {
         @include logo(280px, 180px);
         border-radius: 15px;
+    }
+    .sidebar {
+        width: 300px;
+    }
+
+    .sidebarCardImg {
+        @include logo(250px, 250px);
+
     }
