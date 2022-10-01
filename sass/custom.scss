@@ -8,9 +8,8 @@
     width: $width;
     height: $height;
 }  
-    
     // Import Bootstrap
-    @import '../node_modules/bootstrap/scss/bootstrap.scss';
+    @import '../node_modules/bootstrap/scss/bootstrap';
 
     .containerbg {
         @include background(url(../../images/home/backgroundMobile_edited.jpg), no-repeat, fixed, 100%);
@@ -18,4 +17,9 @@
 
     .logoPc {
         @include logo(50px, 50px);
+    }
+
+    .categoryVideo iframe {
+        @include logo(280px, 180px);
+        border-radius: 15px;
     }
