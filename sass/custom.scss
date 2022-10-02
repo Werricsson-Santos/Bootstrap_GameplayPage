@@ -38,6 +38,13 @@
         width: 300px;
         border-bottom: 2px solid rgba(245, 228,1,0.6);
     }
+    .sidebarTitle{
+        border-bottom: 2px solid rgba(245, 228,1,0.6);
+        font-size: 30px;
+        letter-spacing: 4px;
+        width: 100%;
+        height: 30px;
+    }
     .Button{
         @include logo(80px, 40px);
         background: black;
