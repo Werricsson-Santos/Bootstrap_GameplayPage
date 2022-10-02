@@ -38,6 +38,56 @@
         width: 300px;
         border-bottom: 2px solid rgba(245, 228,1,0.6);
     }
+    .Button{
+        @include logo(80px, 40px);
+        background: black;
+        color:  white;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        position: relative;
+        outline: none;
+        border: none;
+
+        &:before{
+            content: "";
+            position: absolute;
+            border: 2px solid transparent;
+            width: 0%;
+            height: 0%;
+            top: 0;
+            left: 0;
+        }
+
+        &:after{
+            content: "";
+            position: absolute;
+            background-color: transparent;
+            border: 1px solid transparent;
+            width: 0%;
+            height: 0%;
+            bottom: 0;
+            right: 0;
+        }
+        &:hover:before{
+            width: 100%;
+            height: 100%;
+            border: 2px solid yellow;
+            box-sizing: border-box;
+            border-top: none;
+            border-right: none;
+            transition: height .2s linear, width .3s linear .3s;
+        }
+        &:hover:after{
+            width: 100%;
+            height: 100%;
+            border: 2px solid yellow;
+            box-sizing: border-box;
+            border-left: none;
+            border-bottom: none;
+            transition: height .3s linear .5s, width .3s linear .8s;
+        }
+    }
+
     .loginContent{
         height: 63vh;
     }

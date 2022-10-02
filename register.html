@@ -21,7 +21,7 @@
     <title>R6 HighLights Community</title>
 </head>
 <body>
-    <div class="container-fluid px-0 gx-0 containerbg img-fluid">
+    <div class="container-fluid vh-100 px-0 gx-0 containerbg img-fluid">
 
     <!-- HEADER AND DESCRIPTIONS -->
     <div class="container px-0 gx-0 container00 container01">
@@ -41,7 +41,7 @@
                                     <a class="nav-link active" aria-current="page" href="/login.html">Login</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="/register.html">Register</a>
+                                    <a class="nav-link active" href="/register.html">Sign Up</a>
                                 </li>
                             </ul>
                         </div>
@@ -57,7 +57,28 @@
     </div>
     <!-- /////////////////////////////////////////////////////////////////////// -->
 
-    <footer class="container-fluid d-flex justify-content-between pe-0 footer" style="background-color: rgba(0, 0, 0, 0.6);">
+    <!--  -->
+    <div class="container position-sticky top-50 start-0" style="height: 64vh;">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label form-label d-inline-flex mb-0 p-2 bg-dark text-light rounded">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label form-label d-inline-flex mb-0 p-2 bg-dark text-light rounded">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label form-label d-inline-flex mb-0 p-2 bg-dark text-light rounded">Repeat your password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repeat password">
+                <p class="p-3"style="float: right;">You don't have account? <a class="text-decoration-none" href="/register.html"><mark class="bg-dark text-light rounded">Register</mark></a></p>
+            </div>
+            <button type="submit" class="Button">Submit</button>
+        </form>
+    </div>
+
+    <footer class="container-fluid d-flex justify-content-between pe-0 position-absolute bottom-0 start-0 footer" style="background-color: rgba(0, 0, 0, 0.6);">
         <span class="me-4 signature">
             <p class="text-center text-light py-0 my-0">Designed by WrN</p>
             <img src="./images/friends/me.jpg" class="img-fluid rounded mx-auto d-block designedBy" alt="designedBy">
