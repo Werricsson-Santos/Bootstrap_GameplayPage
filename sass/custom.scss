@@ -127,6 +127,8 @@
     @media(max-width: 992px) {
         .containerbg {
             background-image: url(../images/home/backgroundMobile_edited.jpg);
+            background-size: contain;
+            height: 100%;
         }
         .videoContent {
             margin: 0px;
