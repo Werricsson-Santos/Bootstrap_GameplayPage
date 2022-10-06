@@ -96,7 +96,12 @@
     }
 
     .inputContent{
-        height: 69.5vh;
+        height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        flex-basis: auto;
     }
 
     .sidebarCardImg {
@@ -106,10 +111,11 @@
     .designedBy{
         @include logo(60px, 60px);
     }
-    @media(max-width: 1440px) {
-        .inputContent{
-            height: 75.5vh;
-        }
+    .footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 
     @media(max-width: 1148px) {
@@ -137,9 +143,6 @@
         .sidebar {
             display: block;
         }
-        .inputContent{
-            height: 75.5vh;
-        }
     }
     @media(max-width: 550px) {
         .containerbg {
@@ -147,12 +150,14 @@
             background-size: cover;
             height: 100%;
         }
-        .inputContent{
-            height: 73.5vh;
-        }
     }
-    @media (max-width: 376px) {
-            .inputContent{
-                height: 64vh;
-            }
+    @media(max-width: 376px) {
+        .containerbg {
+            background-image: url(../images/home/backgroundMobile_edited.jpg);
+            background-size: cover;
+            height: 100%;
+        }
+        .inputContent{
+            height: 80vh;
+        }
     }
