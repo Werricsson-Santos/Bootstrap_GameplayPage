@@ -37,6 +37,8 @@
     .sidebar {
         width: 300px;
         border-bottom: 2px solid rgba(245, 228,1,0.6);
+        margin-right: 0px;
+        padding-right: 0px;
     }
     .sidebarTitle{
         border-bottom: 2px solid rgba(245, 228,1,0.6);
@@ -147,6 +149,8 @@
         }
         .sidebar {
             display: block;
+            margin-right: auto;
+            padding-right: auto;
         }
     }
     @media(max-width: 550px) {
