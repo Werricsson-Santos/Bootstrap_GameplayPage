@@ -9,7 +9,7 @@
     height: $height;
 }  
     // Import Bootstrap
-    @import '../node_modules/bootstrap/scss/bootstrap';
+    @import '../../node_modules/bootstrap/scss/bootstrap';
 
     .containerbg {
         @include background(url(../images/home/background.jpg), no-repeat, fixed, cover);
